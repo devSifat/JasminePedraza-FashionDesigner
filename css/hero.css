@@ -1,0 +1,92 @@
+#hero {
+    padding: 51px 0 10px 0;
+}
+
+.hero-wrapper {
+    width: 100%;
+    padding-left: 10rem;
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero-left,
+.hero-right {
+    flex-basis: calc(50% - 3rem);
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    padding: 3rem 0;
+}
+
+.hero-left>h1 {
+    color: var(--black);
+    font-size: 10rem;
+    line-height: 10rem;
+    font-family: "Garet Book";
+    text-transform: uppercase;
+}
+
+.hero-left>p {
+    font-family: "OS-Regular";
+    font-size: 3rem;
+    color: var(--black);
+    position: relative;
+    padding-left: 6rem;
+    width: fit-content;
+}
+
+.hero-left>p::after {
+    content: "";
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    background-image: url(../images/star.png);
+    background-size: cover;
+    top: 0;
+    left: 1rem;
+}
+
+.hero-left>p>span {
+    font-family: "OS-SemiBold";
+}
+
+.hero-btn {
+    margin-top: 7rem;
+}
+
+.hero-right {
+    width: 100%;
+}
+
+.hero-right>img {
+    width: 100%;
+}
+
+@media(max-width: 850px) {
+    .hero-left>h1 {
+        font-size: 8rem;
+        line-height: 8rem;
+    }
+}
+
+@media(max-width: 570px) {
+    .hero-wrapper{
+        padding: 0;
+        justify-content: center;
+    }
+    .hero-left{
+        max-width: 50rem;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-left,
+    .hero-right {
+        flex-basis: calc(100% - 5rem);
+    }
+}

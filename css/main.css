@@ -18,9 +18,67 @@ ul > li{
 }
 html{
     scroll-behavior: smooth;
+    font-size: 62.5%;
 }
 body{
     background: var(--light-gray);
+}
+section{
+    padding: 10px 0;
+    width: 100%;
+}
+.container{
+    max-width: 1440px;
+}
+.btn.style-1{
+    width: fit-content;
+    font-family: "Garet Book";
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--primary-color);
+    padding: 1.2rem 5rem;
+    border: 0.3rem solid var(--black);
+    transition: 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    z-index: 2;
+}
+.btn.style-1:hover{
+    color: var(--black);
+}
+.btn.style-1>i{
+    position: absolute;
+    top: 50%;
+    right: -4rem;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.btn.style-1:hover>i{
+    right: 2rem;
+    opacity: 1;
+}
+.btn.style-1::after,
+.btn.style-1::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    background: var(--black);
+    z-index: -1;
+    transition: 0.4s ease-in-out;
+}
+.btn.style-1::before{
+    left: 0;
+}
+.btn.style-1::after{
+    right: 0;
+}
+.btn.style-1:hover::after,
+.btn.style-1:hover::before{
+    width: 0;
 }
 ::selection{
     background: var(--primary-color);
@@ -34,4 +92,46 @@ body{
 }
 ::-webkit-scrollbar-track{
     background: var(--white);
+}
+
+
+@media(max-width: 1200px){
+    html{
+        font-size: 60%;
+    }
+}
+@media(max-width: 1100px){
+    html{
+        font-size: 57%;
+    }
+}
+@media(max-width: 1000px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width: 930px){
+    html{
+        font-size: 53%;
+    }
+}
+@media(max-width: 880px){
+    html{
+        font-size: 50%;
+    }
+}
+@media(max-width: 770px){
+    html{
+        font-size: 46%;
+    }
+}
+@media(max-width: 680px){
+    html{
+        font-size: 42%;
+    }
+}
+@media(max-width: 620px){
+    html{
+        font-size: 38%;
+    }
 }
