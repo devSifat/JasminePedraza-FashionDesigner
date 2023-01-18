@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "OS-Black";
+    src: url(./OpenSauceOne-Black.ttf);
+}
+@font-face {
+    font-family: "OS-BlackItalic";
+    src: url(./OpenSauceOne-BlackItalic.ttf);
+}
+@font-face {
+    font-family: "OS-Bold";
+    src: url(./OpenSauceOne-Bold.ttf);
+}
+@font-face {
+    font-family: "OS-BoldItalic";
+    src: url(./OpenSauceOne-BoldItalic.ttf);
+}
+@font-face {
+    font-family: "OS-ExtraBold";
+    src: url(./OpenSauceOne-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "OS-ExtraBoldItalic";
+    src: url(./OpenSauceOne-ExtraBoldItalic.ttf);
+}
+@font-face {
+    font-family: "OS-Italic";
+    src: url(./OpenSauceOne-Italic.ttf);
+}
+@font-face {
+    font-family: "OS-Light";
+    src: url(./OpenSauceOne-Light.ttf);
+}
+@font-face {
+    font-family: "OS-LightItalic";
+    src: url(./OpenSauceOne-LightItalic.ttf);
+}
+@font-face {
+    font-family: "OS-Medium";
+    src: url(./OpenSauceOne-Medium.ttf);
+}
+@font-face {
+    font-family: "OS-MediumItalic";
+    src: url(./OpenSauceOne-MediumItalic.ttf);
+}
+@font-face {
+    font-family: "OS-Regular";
+    src: url(./OpenSauceOne-Regular.ttf);
+}
+@font-face {
+    font-family: "OS-SemiBold";
+    src: url(./OpenSauceOne-SemiBold.ttf);
+}
+@font-face {
+    font-family: "OS-SemiBoldItalic";
+    src: url(./OpenSauceOne-SemiBoldItalic.ttf);
+}
