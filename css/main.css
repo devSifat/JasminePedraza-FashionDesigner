@@ -82,6 +82,14 @@ section{
 .btn.style-1:hover::before{
     width: 0;
 }
+.starmark{
+    animation: starmark 5s linear infinite !important;
+}
+@keyframes starmark{
+    100%{
+        transform: rotate(360deg);
+    }
+}
 ::selection{
     background: var(--primary-color);
     color: var(--white);
