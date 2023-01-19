@@ -24,11 +24,13 @@ body{
     background: var(--light-gray);
 }
 section{
-    padding: 10px 0;
+    padding: 3rem 0;
     width: 100%;
+    box-shadow: 0 0 4px -1px #d9d8d8;
 }
 .container{
     max-width: 1440px;
+    margin: 0 auto;
 }
 .btn.style-1{
     width: fit-content;

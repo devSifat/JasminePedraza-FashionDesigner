@@ -1,0 +1,80 @@
+.about-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    gap: 5rem;
+}
+
+.about-left,
+.about-right {
+    flex-basis: calc(50% - 5rem);
+    align-items: center;
+}
+
+.about-left {
+    width: 100%;
+    padding: 8rem 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.about-left>img.starmark {
+    position: absolute;
+    width: 3rem;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+.about-left>.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 40rem;
+}
+
+.about-text>h1 {
+    font-family: "Garet Book";
+    font-size: 5rem;
+    line-height: 5rem;
+    font-weight: 100;
+    color: var(--black);
+}
+
+.about-text>h1>span {
+    font-weight: 600;
+}
+
+.about-text>p {
+    font-family: "OS-Regular";
+    font-size: 2rem;
+    font-weight: 200;
+    color: var(--black);
+    opacity: 0.8;
+}
+
+.about-right>img {
+    width: 100%;
+}
+
+
+@media(max-width: 560px) {
+    .about-wrapper {
+        flex-wrap: wrap;
+    }
+    .about-left{
+        justify-content: flex-start;
+    }
+    .about-left>img.starmark{
+        top: 3rem;
+        left: calc(100% - 4rem);
+    }
+    .about-text{
+        max-width: 50rem !important;
+    }
+    .about-left,
+    .about-right {
+        flex-basis: 100%;
+    }
+}
