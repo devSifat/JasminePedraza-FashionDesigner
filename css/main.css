@@ -10,6 +10,9 @@
     box-sizing: border-box;
     outline: none;
 }
+img{
+    width: 100%;
+}
 a{
     text-decoration: none;
 }
@@ -85,6 +88,32 @@ section{
 .starmark{
     animation: starmark 5s linear infinite !important;
 }
+.section-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 40rem;
+}
+
+.section-heading>h1 {
+    font-family: "Garet Book";
+    font-size: 5rem;
+    line-height: 5rem;
+    font-weight: 100;
+    color: var(--black);
+}
+
+.section-heading>h1>span {
+    font-weight: 600;
+}
+
+.section-heading>p {
+    font-family: "OS-Regular";
+    font-size: 2rem;
+    font-weight: 200;
+    color: var(--black);
+    opacity: 0.8;
+}
 @keyframes starmark{
     100%{
         transform: rotate(360deg);
@@ -138,6 +167,9 @@ section{
 @media(max-width: 680px){
     html{
         font-size: 42%;
+    }
+    .section-heading{
+        max-width: 50rem !important;
     }
 }
 @media(max-width: 620px){
