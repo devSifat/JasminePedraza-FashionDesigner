@@ -7,7 +7,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     outline: none;
 }
 img{
@@ -29,13 +30,16 @@ body{
 section{
     padding: 3rem 0;
     width: 100%;
-    box-shadow: 0 0 4px -1px #d9d8d8;
+    -webkit-box-shadow: 0 0 4px -1px #d9d8d8;
+            box-shadow: 0 0 4px -1px #d9d8d8;
 }
 .container{
     max-width: 1440px;
     margin: 0 auto;
 }
 .btn.style-1{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     font-family: "Garet Book";
     font-weight: bold;
@@ -43,6 +47,8 @@ section{
     color: var(--primary-color);
     padding: 1.2rem 5rem;
     border: 0.3rem solid var(--black);
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
     position: relative;
     overflow: hidden;
@@ -56,8 +62,12 @@ section{
     position: absolute;
     top: 50%;
     right: -4rem;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     opacity: 0;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
 }
 .btn.style-1:hover>i{
@@ -73,6 +83,8 @@ section{
     top: 0;
     background: var(--black);
     z-index: -1;
+    -webkit-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
 }
 .btn.style-1::before{
@@ -91,6 +103,8 @@ section{
 
 
 .btn.style-2{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     font-family: "Garet Book";
     font-weight: bold;
@@ -102,17 +116,25 @@ section{
     background: transparent;
     color: var(--black);
     z-index: 2;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
 }
 .btn.style-2:hover{
-    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+        -ms-transform: scale(0.95);
+            transform: scale(0.95);
 }
 .btn.style-2>i{
     position: absolute;
     top: 50%;
     right: -4rem;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     opacity: 0;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
 }
 .btn.style-2:hover>i{
@@ -126,11 +148,17 @@ section{
 
 
 .starmark{
-    animation: starmark 5s linear infinite !important;
+    -webkit-animation: starmark 5s linear infinite !important;
+            animation: starmark 5s linear infinite !important;
 }
 .section-heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 3rem;
     max-width: 40rem;
 }
@@ -154,10 +182,21 @@ section{
     color: var(--black);
     opacity: 0.8;
 }
+@-webkit-keyframes starmark{
+    100%{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
 @keyframes starmark{
     100%{
-        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
     }
+}
+::-moz-selection{
+    background: var(--primary-color);
+    color: var(--white);
 }
 ::selection{
     background: var(--primary-color);

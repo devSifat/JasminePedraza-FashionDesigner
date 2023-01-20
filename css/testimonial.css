@@ -19,15 +19,21 @@
     left: 0;
     height: 100%;
     z-index: -1;
-    filter: blur(2px);
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
 }
 .testi-text{
     padding: 7rem;
     font-family: "OS-Regular";
     color: var(--white);
     max-width: 50rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 2rem;
 }
 .testi-text>p{

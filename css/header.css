@@ -2,8 +2,12 @@ header{
     width: 100%;
     padding: 15px 30px 15px 0;
     background: var(--white);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     position: fixed;
     top: 0;
     left: 0;
@@ -11,6 +15,8 @@ header{
 }
 nav>ul{
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 40px;
     font-size: 17px;
@@ -19,6 +25,8 @@ nav>ul{
 nav>ul>li>a{
     color: var(--black);
     opacity: 0.8;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
 }
 nav>ul>li>a:hover{

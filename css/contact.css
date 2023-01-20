@@ -7,13 +7,22 @@
     background-image: url(../images/9.webp);
     background-size: cover;
     background-position: center center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
 }
 .cotact-form{
     max-width: 600rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 15rem 8rem;
     gap: 7rem;
     background: var(--white);
