@@ -85,6 +85,46 @@ section{
 .btn.style-1:hover::before{
     width: 0;
 }
+
+
+
+
+
+.btn.style-2{
+    width: fit-content;
+    font-family: "Garet Book";
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 1.2rem 5rem;
+    border: 0.3rem solid var(--black);
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    color: var(--black);
+    z-index: 2;
+    transition: 0.3s ease-in-out;
+}
+.btn.style-2:hover{
+    transform: scale(0.95);
+}
+.btn.style-2>i{
+    position: absolute;
+    top: 50%;
+    right: -4rem;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.btn.style-2:hover>i{
+    right: 2rem;
+    opacity: 1;
+}
+
+
+
+
+
+
 .starmark{
     animation: starmark 5s linear infinite !important;
 }
